@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding: 20px;
+  background: #cab45e;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+}
+.drop-zone {
+  padding: 100px;
+  border: 3px dashed #bbb;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(155, 155, 155);
+  transition: all 300ms ease-out;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.drop-zone--success {
+  background-color: hsla(97, 100%, 60%, 0.35);
+  font-weight: bold;
+  padding: 10px;
+  border-width: 0;
+  flex: 0;
+}
+
+.output {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.clear {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 2em;
+  padding: 0.5em 1em;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.clear__icon {
+  margin-right: 0.1em;
+}
+
+.connections {
+  display: none;
+  padding: 0 20px;
+}
+.connections--visible {
+  display: block;
+}
+
+.connections__heading {
+  display: flex;
+  align-items: center;
+}
