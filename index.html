@@ -16,8 +16,22 @@
       <h1 class="heading">Preconnect List Generator</h1>
     </header>
     <main class="main">
+      <ol class="steps">
+        <li>
+          <span class="step-icon">🔴</span>Record a page load in your devtools
+          of choice
+        </li>
+        <li><span class="step-icon">💾</span>Save it as a HAR file</li>
+        <li><span class="step-icon">👇</span>Drop it below</li>
+      </ol>
       <div id="dropZone" class="drop-zone">
-        <span>Drop .har file here</span>
+        <span
+          >Drop .har file here <br />or
+          <button id="choose-file" type="button" class="choose-file">
+            choose a file
+          </button></span
+        >
+        <input type="file" class="file-input" id="file-input" />
       </div>
 
       <section id="connections" class="connections">
@@ -31,7 +45,6 @@
       </section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

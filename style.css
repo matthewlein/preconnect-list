@@ -23,6 +23,40 @@ body {
 .heading {
   text-align: center;
 }
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px 0;
+}
+.step-icon {
+  margin-right: 0.3em;
+  display: inline-block;
+}
+
+.choose-file {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline;
+  background: transparent;
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+  color: rgb(0, 136, 255);
+}
+.choose-file:hover {
+  text-decoration: underline;
+}
+
+.file-input {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
 .drop-zone {
   padding: 100px;
   border: 3px dashed #bbb;
@@ -38,12 +72,20 @@ body {
   justify-content: center;
   margin: 20px;
 }
+.drop-zone--over {
+  background-color: hsla(55, 100%, 60%, 0.35);
+}
+.drop-zone--error {
+  background-color: hsla(0, 100%, 60%, 0.35);
+}
+
 .drop-zone--success {
   background-color: hsla(97, 100%, 60%, 0.35);
   font-weight: bold;
   padding: 10px;
   border-width: 0;
   flex: 0;
+  flex-basis: auto;
 }
 
 .output {
@@ -60,6 +102,7 @@ body {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  border: none;
 }
 .clear__icon {
   margin-right: 0.1em;
