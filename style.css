@@ -41,6 +41,10 @@ body {
   text-decoration: underline;
 }
 
+a {
+  color: inherit;
+}
+
 .heading {
   text-align: center;
   font-style: italic;
