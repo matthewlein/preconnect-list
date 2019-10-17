@@ -4,7 +4,7 @@ body {
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: #f6efe5;
   margin: 0;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -12,7 +12,14 @@ body {
 }
 .header {
   padding: 20px;
-  background: #cab45e;
+  background: rgb(148, 187, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(238, 174, 202, 1) 50%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12);
 }
 .main {
   flex: 1;
@@ -22,13 +29,23 @@ body {
 
 .heading {
   text-align: center;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-size: 36px;
 }
 
 .steps {
   list-style: none;
   margin: 0;
-  padding: 10px 20px 0;
+  padding: 40px 40px 0;
+  font-size: 20px;
 }
+.steps li {
+  padding: 5px 0;
+}
+
 .step-icon {
   margin-right: 0.3em;
   display: inline-block;
